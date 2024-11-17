@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'screen/splash_screen.dart';
 
+// This flutter Project is made for learning purpose only.
 void main() {
   runApp(PreetiUnicodeApp());
 }
