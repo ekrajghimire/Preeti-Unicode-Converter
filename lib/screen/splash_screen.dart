@@ -18,7 +18,7 @@ class _SplashScreenState extends State<SplashScreen>
 
     // Initialize the animation controller
     _controller = AnimationController(
-      duration: Duration(seconds: 3),
+      duration: const Duration(seconds: 3), // Time dureation of 3 sec
       vsync: this,
     );
 
@@ -41,7 +41,7 @@ class _SplashScreenState extends State<SplashScreen>
 
   // Function to navigate to HomeScreen after a delay
   _navigateToHome() async {
-    await Future.delayed(Duration(seconds: 3));
+    await Future.delayed(const Duration(seconds: 3));
     Navigator.pushReplacement(
       context,
       MaterialPageRoute(builder: (context) => HomeScreen()),

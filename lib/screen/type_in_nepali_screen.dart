@@ -23,13 +23,11 @@ class _TypeInNepaliScreenState extends State<TypeInNepaliScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color(0xFFE70010), // Nepal Red color
-        title: Text(
+        backgroundColor: const Color(0xFFE70010),
+        title: const Text(
           'Type in Nepali',
           style: TextStyle(
-              fontWeight: FontWeight.bold, // Bold title
-              fontSize: 20,
-              color: Colors.white),
+              fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
         ),
         centerTitle: true,
       ),
@@ -44,12 +42,11 @@ class _TypeInNepaliScreenState extends State<TypeInNepaliScreen> {
             end: Alignment.bottomRight,
           ),
         ),
-        padding: EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(16.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            // Title Text
-            Text(
+            const Text(
               "Enter Romanized Text to Convert to Nepali",
               style: TextStyle(
                 fontSize: 24,
@@ -57,7 +54,7 @@ class _TypeInNepaliScreenState extends State<TypeInNepaliScreen> {
                 color: Colors.white,
               ),
             ),
-            SizedBox(height: 30), // Space between title and input field
+            const SizedBox(height: 30),
 
             // Input Field to Enter Romanized Text
             TextField(
@@ -80,12 +77,13 @@ class _TypeInNepaliScreenState extends State<TypeInNepaliScreen> {
               onPressed: convertToNepali,
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.red.shade600, // Button color
-                padding: EdgeInsets.symmetric(vertical: 15, horizontal: 50),
+                padding:
+                    const EdgeInsets.symmetric(vertical: 15, horizontal: 50),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(10),
                 ),
               ),
-              child: Text(
+              child: const Text(
                 "Convert to Nepali",
                 style: TextStyle(
                   fontSize: 18,
@@ -94,10 +92,10 @@ class _TypeInNepaliScreenState extends State<TypeInNepaliScreen> {
                 ),
               ),
             ),
-            SizedBox(height: 30), // Space between button and output field
+            SizedBox(height: 30),
 
             // Output Text Field
-            Text(
+            const Text(
               "Output:",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
@@ -105,9 +103,9 @@ class _TypeInNepaliScreenState extends State<TypeInNepaliScreen> {
                 color: Colors.white,
               ),
             ),
-            SizedBox(height: 10), // Space between output label and field
+            const SizedBox(height: 10),
             Container(
-              padding: EdgeInsets.all(10),
+              padding: const EdgeInsets.all(10),
               width: double.infinity,
               decoration: BoxDecoration(
                 color: Colors.white,
@@ -115,7 +113,7 @@ class _TypeInNepaliScreenState extends State<TypeInNepaliScreen> {
               ),
               child: SelectableText(
                 outputText,
-                style: TextStyle(fontSize: 18),
+                style: const TextStyle(fontSize: 18),
               ),
             ),
           ],
