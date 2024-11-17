@@ -10,7 +10,7 @@ class PreetiUnicodeApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Preeti Unicode Converter',
+      title: 'Preeti-Unicode Converter',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),

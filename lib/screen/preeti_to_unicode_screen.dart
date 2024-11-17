@@ -29,6 +29,9 @@ class _PreetiToUnicodeScreenState extends State<PreetiToUnicodeScreen> {
               fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
         ),
         centerTitle: true,
+        iconTheme: const IconThemeData(
+          color: Colors.white,
+        ),
       ),
       body: Container(
         decoration: BoxDecoration(
@@ -115,6 +118,16 @@ class _PreetiToUnicodeScreenState extends State<PreetiToUnicodeScreen> {
                 style: const TextStyle(fontSize: 18),
               ),
             ),
+            const SizedBox(
+              height: 50,
+            ),
+            const Text(
+              'Note: The app might not be accurate because it is made for learning purpose.',
+              style: TextStyle(
+                fontSize: 12,
+                color: Colors.white54,
+              ),
+            )
           ],
         ),
       ),

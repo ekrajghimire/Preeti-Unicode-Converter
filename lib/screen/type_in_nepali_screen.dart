@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:preeti_unicode_converter/logic/type_in_nepali_logic.dart';
-import 'package:preeti_unicode_converter/logic/type_in_nepali_logic.dart'; // Import the conversion logic file for Type in Nepali
 
 class TypeInNepaliScreen extends StatefulWidget {
   @override
@@ -30,6 +29,10 @@ class _TypeInNepaliScreenState extends State<TypeInNepaliScreen> {
               fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
         ),
         centerTitle: true,
+        iconTheme: const IconThemeData(
+          color: Colors
+              .white,
+        ),
       ),
       body: Container(
         decoration: BoxDecoration(
@@ -70,7 +73,7 @@ class _TypeInNepaliScreenState extends State<TypeInNepaliScreen> {
               ),
               style: TextStyle(fontSize: 18),
             ),
-            SizedBox(height: 20), // Space between input field and button
+            const SizedBox(height: 20), // Space between input field and button
 
             // Convert Button
             ElevatedButton(
@@ -92,7 +95,7 @@ class _TypeInNepaliScreenState extends State<TypeInNepaliScreen> {
                 ),
               ),
             ),
-            SizedBox(height: 30),
+            const SizedBox(height: 30),
 
             // Output Text Field
             const Text(
@@ -116,6 +119,16 @@ class _TypeInNepaliScreenState extends State<TypeInNepaliScreen> {
                 style: const TextStyle(fontSize: 18),
               ),
             ),
+            const SizedBox(
+              height: 50,
+            ),
+            const Text(
+              'Note: The app might not be accurate because it is made for learning purpose.',
+              style: TextStyle(
+                fontSize: 12,
+                color: Colors.white54,
+              ),
+            )
           ],
         ),
       ),
