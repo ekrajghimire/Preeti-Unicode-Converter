@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:preeti_unicode_converter/logic/conversion_logic.dart'; // Import the conversion logic file for Preeti to Unicode
+import 'package:preeti_unicode_converter/logic/conversion_logic.dart';
 
 class PreetiToUnicodeScreen extends StatefulWidget {
   @override
@@ -23,12 +23,10 @@ class _PreetiToUnicodeScreenState extends State<PreetiToUnicodeScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Color(0xFFE70010), // Nepal Red color
-        title: Text(
+        title: const Text(
           'Preeti to Unicode',
           style: TextStyle(
-              fontWeight: FontWeight.bold, // Bold title
-              fontSize: 20,
-              color: Colors.white),
+              fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
         ),
         centerTitle: true,
       ),
@@ -43,12 +41,11 @@ class _PreetiToUnicodeScreenState extends State<PreetiToUnicodeScreen> {
             end: Alignment.bottomRight,
           ),
         ),
-        padding: EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(16.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            // Title Text
-            Text(
+            const Text(
               "Enter Preeti Text to Convert",
               style: TextStyle(
                 fontSize: 24,
@@ -56,7 +53,7 @@ class _PreetiToUnicodeScreenState extends State<PreetiToUnicodeScreen> {
                 color: Colors.white,
               ),
             ),
-            SizedBox(height: 30), // Space between title and input field
+            const SizedBox(height: 30),
 
             // Input Field to Enter Preeti Text
             TextField(
@@ -70,21 +67,22 @@ class _PreetiToUnicodeScreenState extends State<PreetiToUnicodeScreen> {
                   borderSide: BorderSide.none,
                 ),
               ),
-              style: TextStyle(fontSize: 18),
+              style: const TextStyle(fontSize: 18),
             ),
-            SizedBox(height: 20), // Space between input field and button
+            const SizedBox(height: 20),
 
             // Convert Button
             ElevatedButton(
               onPressed: convertPreetiToUnicode,
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.red.shade600, // Button color
-                padding: EdgeInsets.symmetric(vertical: 15, horizontal: 50),
+                padding:
+                    const EdgeInsets.symmetric(vertical: 15, horizontal: 50),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(10),
                 ),
               ),
-              child: Text(
+              child: const Text(
                 "Convert to Unicode",
                 style: TextStyle(
                   fontSize: 18,
@@ -93,10 +91,10 @@ class _PreetiToUnicodeScreenState extends State<PreetiToUnicodeScreen> {
                 ),
               ),
             ),
-            SizedBox(height: 30), // Space between button and output field
+            const SizedBox(height: 30),
 
             // Output Text Field
-            Text(
+            const Text(
               "Output:",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
@@ -104,9 +102,9 @@ class _PreetiToUnicodeScreenState extends State<PreetiToUnicodeScreen> {
                 color: Colors.white,
               ),
             ),
-            SizedBox(height: 10), // Space between output label and field
+            const SizedBox(height: 10), // Space between output label and field
             Container(
-              padding: EdgeInsets.all(10),
+              padding: const EdgeInsets.all(10),
               width: double.infinity,
               decoration: BoxDecoration(
                 color: Colors.white,
@@ -114,7 +112,7 @@ class _PreetiToUnicodeScreenState extends State<PreetiToUnicodeScreen> {
               ),
               child: SelectableText(
                 outputText,
-                style: TextStyle(fontSize: 18),
+                style: const TextStyle(fontSize: 18),
               ),
             ),
           ],

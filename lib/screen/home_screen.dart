@@ -12,9 +12,7 @@ class HomeScreen extends StatelessWidget {
         title: const Text(
           'Preeti-Unicode Converter',
           style: TextStyle(
-              fontWeight: FontWeight.bold, // Bold title for emphasis
-              fontSize: 20,
-              color: Colors.white),
+              fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
         ),
         centerTitle: true,
       ),
@@ -24,7 +22,7 @@ class HomeScreen extends StatelessWidget {
             colors: [
               Colors.blue.shade300,
               Colors.red.shade300
-            ], // Nepalese theme red gradient
+            ], // Nepalese theme red and blue gradient
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
           ),
@@ -34,7 +32,6 @@ class HomeScreen extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              // Title text with Nepalese style
               const Text(
                 "Select an Option",
                 style: TextStyle(
@@ -43,7 +40,7 @@ class HomeScreen extends StatelessWidget {
                   color: Colors.white,
                 ),
               ),
-              SizedBox(height: 30),
+              const SizedBox(height: 30),
               // Preeti to Unicode Button
               Card(
                 elevation: 5,
@@ -59,7 +56,7 @@ class HomeScreen extends StatelessWidget {
                     );
                   },
                   child: Container(
-                    padding: EdgeInsets.all(20),
+                    padding: const EdgeInsets.all(20),
                     width: double.infinity,
                     decoration: BoxDecoration(
                       color: Colors.blue, // Blue background for buttons
@@ -83,7 +80,7 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               // Unicode to Preeti Button
               Card(
                 elevation: 5,
@@ -142,7 +139,7 @@ class HomeScreen extends StatelessWidget {
                     padding: EdgeInsets.all(20),
                     width: double.infinity,
                     decoration: BoxDecoration(
-                      color: Colors.blue, // Light red background for buttons
+                      color: Colors.blue, // Blue background for buttons
                       borderRadius: BorderRadius.circular(10),
                     ),
                     child: const Row(

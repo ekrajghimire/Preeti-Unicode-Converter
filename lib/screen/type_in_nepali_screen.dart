@@ -37,8 +37,8 @@ class _TypeInNepaliScreenState extends State<TypeInNepaliScreen> {
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              Colors.red.shade400,
-              Colors.red.shade600
+              Colors.blue.shade500,
+              Colors.blue.shade600
             ], // Gradient for Nepalese theme
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
